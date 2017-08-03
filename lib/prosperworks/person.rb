@@ -24,5 +24,10 @@ module ProsperWorks
       "people"
     end
 
+    def opportunities
+      uri = self.class.get_uri(self.class.api_name, self.id, 'related/opportunities') 
+      response = self.class.send_request('get', uri) 
+      Opportunity.handle_multiple_response(response)
+    end
   end
 end
