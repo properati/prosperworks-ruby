@@ -4,9 +4,9 @@ module ProsperWorks
 
     attr_accessor :id,
                   :name
-  end
 
-  def self.api_name
-    "loss_reasons"
+    def self.api_name
+      "loss_reasons"
+    end
   end
 end
