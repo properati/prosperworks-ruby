@@ -35,6 +35,7 @@ require 'prosperworks/version'
 require 'prosperworks/webhook'
 require 'prosperworks/activity'
 require 'prosperworks/activity_type'
+require 'prosperworks/loss_reason'
 
 module ProsperWorks
 
